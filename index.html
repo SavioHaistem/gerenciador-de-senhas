@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="gridAreas.css">
+    <title> gerenciador </title>
+</head>
+<body class="grid-body">
+
+<main class="table">
+    <div class="grid grid-table">
+        <h3 class="senha"> Senha: </h3>         
+        <input type="password" 
+                id="password" 
+                class="input-text inputPassword">
+
+        <h3 class="empresa"> Empresa: </h3>
+         <input type="text" 
+                id="assign-Input"
+                class="input-text inputAssigned">
+
+        <h3 class="email"> Email: </h3>
+         <input type="email"
+                id="email-Input" 
+                class="input-text inputEmail">
+
+
+        <input  type="button" 
+                id="put"
+                class="Button"
+                value="guardar" 
+                onclick="putLogin()">
+    </div>
+
+    
+</main>
+
+<footer class="Footer">
+     <img src="./images/key.png" alt="chave" id="Key-image">
+</footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
