@@ -1,10 +1,16 @@
-body {
-    background-color: rgb(0, 0, 0);
+html {
+    background-image: linear-gradient( to bottom, rgb(0, 211, 183), rgb(0, 123, 155));
+    height: 99%;
+}
+ body {
+    height: 99%;
     color: rgb(255, 255, 255);
     display: grid;
+    background-image: linear-gradient( to right, rgb(0, 211, 183), rgb(0, 123, 155));
 }
 h3 {
     font-size: 15px;
+    font-family: sans-serif;
 }
 .grid {
     display: grid;
@@ -33,23 +39,36 @@ h3 {
     ;
 }
 .input-text {
-    border-radius: 50px;
+    box-shadow: 2px 1.5px rgb(46, 46, 46);
+    border-width: 0;
+    border-radius: 10px;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 
 .Button {
+    font-size: 15px;
+    box-shadow: 2px 1.5px rgb(46, 46, 46);
+    color: white;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: rgb(1, 171, 201);
+    border-width: 0px;
     border-radius: 50px;
 }
 
 #Key-image {
+    align-self: flex-end;
+    bottom: 0;
     width: 300px;
     height: 300px;
 }
 
 footer {
-    justify-self: end;
+    display: flex;
+    justify-self: right;
 }
 
 
@@ -57,10 +76,12 @@ footer {
 
 
 @media only screen and (max-width: 700px) {
-
+    body {
+        background-image: linear-gradient( to top, rgb(0, 211, 183), rgb(0, 123, 155));
+    }
     .grid-body {
         grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 1fr 0.5fr;
+        grid-template-rows: 0.2fr 1fr 1fr;
         grid-template-areas: 
         "."
         "table"
@@ -86,10 +107,10 @@ footer {
     
 
     #Key-image {
-
+        align-self: flex-end;
+        bottom: 0;
         width: 200px;
         height: 200px;
-        
     }
 
     .Button {
