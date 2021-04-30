@@ -20,12 +20,15 @@
 .email {
     grid-area: email;
 }
-.nome {
-    grid-area: nome;
+.empresa {
+    grid-area: empresa;
 }
 .table {
     grid-area: table;
 }
 .Footer {
     grid-area: Footer;
+}
+.search-table {
+    grid-area: search-table;
 }

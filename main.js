@@ -47,5 +47,7 @@ class Key {
 //Esta parte do código é usado para mostrar a senha que o usuário pesquisar
 
 function Research(item) {
-    console.log( JSON.parse(localStorage.getItem(`${item}`)) ) 
+    var KeySearched = JSON.parse(localStorage.getItem(`${item}`));
+    document.querySelector(".KeyName").innerHTML = `senha ${KeySearched.Assigned}:`
+    document.querySelector(".KeyPassword").innerHTML = KeySearched.Password
 }

@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="theme.css">
     <link rel="stylesheet" href="gridAreas.css">
+    
     <title> gerenciador </title>
 </head>
-<body class="grid-body">
+<body class="grid-body grid">
 
 <main class="table">
+    
+    <div class="search-table grid">
+        <input type="text" class="search input-text" id="searchBar">
+        <button class="Buttons"id="searchButton" onclick="Research( getSearch() )"> <i class="fas fa-search"></i> </button>
+    </div>
+
     <div class="grid grid-table">
         <h3 class="senha"> Senha: </h3>         
         <input type="password" 
@@ -27,28 +34,21 @@
                 id="email-Input" 
                 class="input-text inputEmail">
 
-
-        <input  type="button" 
-                id="put"
-                class="Button"
-                value="guardar" 
-                onclick="putLogin()">
+        <button id="put" class="Buttons Button" onclick="putLogin()"><i class="fas fa-save"></i> Guardar </button>
     </div>
 
-    <div>
-        <input type="text" class="search" id="searchBar">
-        <input type="button" class="search" id="searchButton" onclick="Research( getSearch() )" value="Pesquisar">
-    </div>
+    
 
-    <li>
-        
+    <li class="Resultado">
+        <h1 class="KeyName"> nome </h1>
+        <h1 class="KeyPassword"> senha </h1>
     </li>
 </main>
 
 <footer class="Footer">
      <img src="./images/key.png" alt="chave" id="Key-image">
 </footer>
-
+    <script src="https://kit.fontawesome.com/b3f3b1a384.js" crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </body>
 </html>
