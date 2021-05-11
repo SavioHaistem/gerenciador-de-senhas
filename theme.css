@@ -68,6 +68,7 @@ footer {
 }
 
 li {
+    list-style: none;
     margin-left: 5rem;
     position: absolute;
     display: flexbox;
@@ -81,52 +82,3 @@ li {
     grid-template-rows: 40px;
     gap: 5px;
 }
-
-@media only screen and (max-width: 700px) {
-    body {
-        background-image: linear-gradient( to top, rgb(0, 211, 183), rgb(0, 123, 155));
-    }
-    .grid-body {
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 1fr 1fr;
-        grid-template-areas: 
-        "."
-        "table"
-        "Footer"
-        ;
-    }
-
-    .grid-table {
-        justify-content: center;
-        grid-template-columns: 200px;
-        grid-template-rows: 45px 45px 45px 45px 45px 45px 55px;
-        gap: 0;
-        grid-template-areas: 
-            "senha" 
-            "inputPassword"
-            "empresa"
-            "inputAssigned"
-            "email"
-            "inputEmail"
-            "Button"                                            
-        ;
-    }
-    
-
-    #Key-image {
-        display: flex;
-        align-self: flex-end;
-        bottom: 0;
-        width: 200px;
-        height: 200px;
-    }
-
-    .Button {
-        margin-top: 1rem;
-    }
-
-    .search-table {
-        grid-template-columns: 200px 40px;
-    }
-  }
-

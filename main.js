@@ -4,6 +4,8 @@ let AssignInput = window.document.getElementById("assign-Input"); // input da em
 let EmailInput = window.document.getElementById("email-Input"); // input de email
 let SearchBar = window.document.getElementById("searchBar"); // input de pesquisa
 let ButtonSearch = window.document.getElementById("searchButton") // input de botão de pesquisar
+var database = [ localStorage ]
+
 
 
 // Esta parte do código esta responsável por buscar os valores que o usuário digitou 
@@ -12,7 +14,7 @@ const getPassword = () => {
    return Password
 };
 const getAssigned = () => {
-    let Assigned = AssignInput.value;
+    let Assigned = AssignInput.value.toUpperCase() ;
     return Assigned
 };
 const getEmail = () => {
@@ -21,17 +23,17 @@ const getEmail = () => {
 };
 const getSearch = () => {
     let Research = SearchBar.value;
-    return Research
+    return Research.toUpperCase()
 };
 
 
 //Esta parte do código é responsável por guardar a senha que o usuário digitou no local storage 
 const putLogin = () => {
     let email = getEmail();
-    let Password = getPassword();
-    let Assigned = getAssigned();
+    let password = getPassword();
+    let assigned = getAssigned();
    
-    localStorage.setItem(`${Assigned}`, JSON.stringify( new Key(Password, email, Assigned))) 
+    localStorage.setItem(`${assigned} de ${email}`, JSON.stringify( new Key(password, email, assigned))) 
 }
 
         //modelo de chave que será usado para guardar a senha do usuário        
@@ -48,6 +50,7 @@ class Key {
 
 function Research(item) {
     var KeySearched = JSON.parse(localStorage.getItem(`${item}`));
-    document.querySelector(".KeyName").innerHTML = `senha ${KeySearched.Assigned}:`
+    document.querySelector(".KeyName").innerHTML = `senha ${KeySearched.Assigned.toLowerCase()}:`
     document.querySelector(".KeyPassword").innerHTML = KeySearched.Password
+    document.querySelector(".KeyEmail").innerHTML = KeySearched.Email
 }
