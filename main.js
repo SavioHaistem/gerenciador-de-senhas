@@ -39,7 +39,7 @@ const putLogin = () => {
     let assigned = getAssigned(); 
 
     if (assigned.length == 0 || password.length == 0 || email.length == 0) {
-        window.alert("não vai")
+        window.alert("para registrar sua senha preencha todos os campos")
     } else {
         localStorage.setItem(`${assigned} de ${email}`, JSON.stringify( new Key(password, email, assigned)))
     }
@@ -58,7 +58,7 @@ class Key {
 //Esta parte do código é usado para mostrar a senha que o usuário pesquisar
 
 function Research(searchedAssign ,searchedEmail) {
-    
+
         if ( searchedAssign.length == 0 || searchedEmail.length == 0) {
             window.alert("Para realizar a pesquisa adicione o email e a empresa que sua senha foi cadastrada")
         } else {
