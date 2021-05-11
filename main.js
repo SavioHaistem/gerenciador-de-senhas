@@ -33,11 +33,17 @@ const getSerachEmail = () => {
 
 //Esta parte do código é responsável por guardar a senha que o usuário digitou no local storage 
 const putLogin = () => {
+    
     let email = getEmail();
     let password = getPassword();
-    let assigned = getAssigned();
-   
-    localStorage.setItem(`${assigned} de ${email}`, JSON.stringify( new Key(password, email, assigned))) 
+    let assigned = getAssigned(); 
+
+    if ( email || password || assigned == "" ) {
+        window.alert("Não deixe nenhum campo em branco")
+    } else {
+        localStorage.setItem(`${assigned} de ${email}`, JSON.stringify( new Key(password, email, assigned)))
+    }
+     
 }
 
 //modelo de chave que será usado para guardar a senha do usuário        
