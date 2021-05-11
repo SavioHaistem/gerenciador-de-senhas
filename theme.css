@@ -13,14 +13,14 @@ h3 {
 }
 .grid-table {
     justify-content: center;
-    grid-template-columns: 85px 300px;
+    grid-template-columns: 300px;
     grid-template-rows:  55px 55px 55px 60px;
     gap: 0.5rem;
     grid-template-areas: 
-        "senha inputPassword"
-        "empresa inputAssigned"
-        "email inputEmail"
-        ". Button"                                            
+        "inputPassword"
+        "inputAssigned"
+        "inputEmail"
+        "Button"                                            
     ;
 }
 
@@ -78,7 +78,7 @@ li {
     margin-top: 50px;
     margin-bottom: 50px;
     justify-content: center;
-    grid-template-columns: 400px 40px;
+    grid-template-columns: 200px 200px 40px;
     grid-template-rows: 40px;
     gap: 5px;
 }
