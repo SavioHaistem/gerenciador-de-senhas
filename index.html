@@ -14,24 +14,28 @@
 <main class="table">
     
     <div class="search-table grid">
-        <input type="text" class="search input-text" id="searchBar">
-        <button class="Buttons"id="searchButton" onclick="Research( getSearch() )"> <i class="fas fa-search"></i> </button>
+        <input type="text" class="search input-text" placeholder="Empresa" id="searchBarAssigned">
+        <input type="email" class="search input-text" placeholder="Email" id="searchBarEmail">
+        <button class="Buttons"id="searchButton" onclick="Research( getSearchAssigned(), getSerachEmail() )"> <i class="fas fa-search"></i> </button>
     </div>
 
     <div class="grid grid-table">
-        <h3 class="senha"> Senha: </h3>         
+               
         <input type="password" 
-                id="password" 
+                id="password"
+                placeholder="Senha"
                 class="input-text inputPassword">
 
-        <h3 class="empresa"> Empresa: </h3>
+        
          <input type="text" 
                 id="assign-Input"
+                placeholder="Empresa"
                 class="input-text inputAssigned">
 
-        <h3 class="email"> Email: </h3>
+        
          <input type="email"
-                id="email-Input" 
+                id="email-Input"
+                placeholder="Email" 
                 class="input-text inputEmail">
 
         <button id="put" class="Buttons Button" onclick="putLogin()"><i class="fas fa-save"></i> Guardar </button>
@@ -40,8 +44,8 @@
     
 
     <li class="Resultado">
-        <h1 class="KeyName"> nome </h1>
-        <h1 class="KeyPassword"> senha </h1>
+        <h1 class="KeyName"> Nome </h1>
+        <h1 class="KeyPassword"> Senha </h1>
         <h1 class="KeyEmail"> Email </h1>
     </li>
 
