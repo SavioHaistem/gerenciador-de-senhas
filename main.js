@@ -33,7 +33,7 @@ const putLogin = () => {
     let password = getPassword();
     let assigned = getAssigned();
    
-    localStorage.setItem(`${assigned} de ${email}`, JSON.stringify( new Key(password, email, assigned))) 
+    localStorage.setItem(`${assigned}`, JSON.stringify( new Key(password, email, assigned))) 
 }
 
         //modelo de chave que será usado para guardar a senha do usuário        
