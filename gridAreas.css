@@ -11,18 +11,6 @@
 .Button {
     grid-area: Button;
 }
-.text {
-    grid-area: text;
-}
-.senha {
-    grid-area: senha;
-}
-.email {
-    grid-area: email;
-}
-.empresa {
-    grid-area: empresa;
-}
 .table {
     grid-area: table;
 }
