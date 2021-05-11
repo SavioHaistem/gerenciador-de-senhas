@@ -33,17 +33,17 @@ const getSerachEmail = () => {
 
 //Esta parte do código é responsável por guardar a senha que o usuário digitou no local storage 
 const putLogin = () => {
-    
+
     let email = getEmail();
     let password = getPassword();
     let assigned = getAssigned(); 
 
-    if ( email || password || assigned == "" ) {
-        window.alert("Não deixe nenhum campo em branco")
+    if (assigned.length == 0 || password.length == 0 || email.length == 0) {
+        window.alert("não vai")
     } else {
         localStorage.setItem(`${assigned} de ${email}`, JSON.stringify( new Key(password, email, assigned)))
     }
-     
+    
 }
 
 //modelo de chave que será usado para guardar a senha do usuário        
@@ -58,8 +58,14 @@ class Key {
 //Esta parte do código é usado para mostrar a senha que o usuário pesquisar
 
 function Research(searchedAssign ,searchedEmail) {
-    var KeySearched = JSON.parse(localStorage.getItem(`${searchedAssign} de ${searchedEmail}`));
-    document.querySelector(".KeyName").innerHTML = `senha ${KeySearched.Assigned}:`
-    document.querySelector(".KeyPassword").innerHTML = KeySearched.Password
-    document.querySelector(".KeyEmail").innerHTML = KeySearched.Email
+    
+        if ( searchedAssign.length == 0 || searchedEmail.length == 0) {
+            window.alert("Para realizar a pesquisa adicione o email e a empresa que sua senha foi cadastrada")
+        } else {
+            var KeySearched = JSON.parse(localStorage.getItem(`${searchedAssign} de ${searchedEmail}`));
+            document.querySelector(".KeyName").innerHTML = `senha ${KeySearched.Assigned}:`
+            document.querySelector(".KeyPassword").innerHTML = KeySearched.Password
+            document.querySelector(".KeyEmail").innerHTML = KeySearched.Email
+        }
+
 }
