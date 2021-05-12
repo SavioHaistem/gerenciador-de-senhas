@@ -26,9 +26,9 @@ h3 {
 
 .grid-body {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "search-table"
+    grid-template-rows: 0.2fr 1fr 1fr;
+    grid-template-areas:
+    "."
     "table"
     "Footer"
     ;
@@ -56,23 +56,30 @@ h3 {
 }
 
 #Key-image {
-    align-self: flex-end;
-    bottom: 0;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
 }
 
-footer {
-    display: flex;
-    justify-self: right;
+.Key-image {
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
 }
 
 li {
-    list-style: none;
-    margin-left: 5rem;
+    bottom: 3rem;
+    left: 3rem; 
     position: absolute;
-    display: flexbox;
-    width: 200px;
+    font-size: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: black;
+    background-color: azure;
+    border-radius: 50px;
+    list-style: none;
+    width: 40rem;
+    height: 10rem;
+    
 }
 .search-table {
     margin-top: 50px;

@@ -73,7 +73,7 @@ function Research(searchedAssign ,searchedEmail) {
             window.alert("Para realizar a pesquisa adicione o email e a empresa que sua senha foi cadastrada")
         } else {
             var KeySearched = JSON.parse(localStorage.getItem(`${searchedAssign} de ${searchedEmail}`));
-            document.querySelector(".KeyName").innerHTML = `senha ${KeySearched.Assigned}:`
+            document.querySelector(".KeyName").innerHTML = `${KeySearched.Assigned}:`
             document.querySelector(".KeyPassword").innerHTML = KeySearched.Password
             document.querySelector(".KeyEmail").innerHTML = KeySearched.Email
         }
