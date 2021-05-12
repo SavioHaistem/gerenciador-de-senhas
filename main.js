@@ -4,7 +4,6 @@ let AssignInput = window.document.getElementById("assign-Input"); // input da em
 let EmailInput = window.document.getElementById("email-Input"); // input de email
 let SearchBarAssigned = window.document.getElementById("searchBarAssigned"); // input de pesquisa de Empresa
 let SearchBarEmail = window.document.getElementById("searchBarEmail") // input de pesquisa de Email
-let ButtonSearch = window.document.getElementById("searchButton") // input de botão de pesquisar
 var database = [ localStorage ] // todas as senhas
 
 
@@ -15,7 +14,7 @@ const getPassword = () => {
    return Password
 };
 const getAssigned = () => {
-    let Assigned = AssignInput.value ;
+    let Assigned = AssignInput.value;
     return Assigned
 };
 const getEmail = () => {
@@ -31,12 +30,16 @@ const getSerachEmail = () => {
     return ResearchEmail
 }
 
+
+
+
+
 //Esta parte do código é responsável por guardar a senha que o usuário digitou no local storage 
 const putLogin = () => {
 
     let email = getEmail();
     let password = getPassword();
-    let assigned = getAssigned(); 
+    let assigned = getAssigned().toUpperCase(); 
 
     if (assigned.length == 0 || password.length == 0 || email.length == 0) {
         window.alert("para registrar sua senha preencha todos os campos")
@@ -46,6 +49,9 @@ const putLogin = () => {
     
 }
 
+
+
+
 //modelo de chave que será usado para guardar a senha do usuário        
 class Key {
     constructor( Password, Email, Assigned ) {
@@ -54,6 +60,10 @@ class Key {
         this.Assigned = Assigned
     }
 }
+
+
+
+
 
 //Esta parte do código é usado para mostrar a senha que o usuário pesquisar
 
