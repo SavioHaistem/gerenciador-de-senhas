@@ -1,5 +1,4 @@
-
- body, html {
+body, html {
     height: 99%;
     color: rgb(255, 255, 255);
     background-image: linear-gradient( to right, rgb(0, 211, 183), rgb(0, 123, 155));
@@ -23,7 +22,6 @@ h3 {
         "Button"                                            
     ;
 }
-
 .grid-body {
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 1fr 1fr;
@@ -41,7 +39,6 @@ h3 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     outline: 0;
 }
-
 .Buttons {
     font-size: 15px;
     box-shadow: 2px 1.5px rgb(46, 46, 46);
@@ -54,18 +51,15 @@ h3 {
     border-radius: 10px;
     cursor: pointer;
 }
-
 #Key-image {
     width: 400px;
     height: 400px;
 }
-
 .Key-image {
     position: absolute;
     bottom: 1px;
     right: 1px;
 }
-
 li {
     bottom: 3rem;
     left: 3rem; 
@@ -77,8 +71,8 @@ li {
     background-color: azure;
     border-radius: 50px;
     list-style: none;
-    width: 40rem;
-    height: 10rem;
+    width: 400px;
+    height: 120px;
     
 }
 .search-table {
