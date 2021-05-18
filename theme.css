@@ -1,4 +1,5 @@
 body, html {
+    overflow: hidden;
     height: 99%;
     color: rgb(255, 255, 255);
     background-image: linear-gradient( to right, rgb(0, 211, 183), rgb(0, 123, 155));
@@ -61,8 +62,8 @@ h3 {
     right: 1px;
 }
 li {
-    bottom: 3rem;
-    left: 3rem; 
+    left: 50px;
+    bottom: 50px;
     position: absolute;
     font-size: 9px;
     font-family: Arial, Helvetica, sans-serif;
@@ -73,8 +74,18 @@ li {
     list-style: none;
     width: 400px;
     height: 120px;
-    
+    animation: go-back 1s;
 }
+
+@keyframes go-back {
+    40% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(400px);
+    }
+}
+
 .search-table {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -82,4 +93,12 @@ li {
     grid-template-columns: 200px 200px 40px;
     grid-template-rows: 40px;
     gap: 5px;
+}
+
+ #Hidden {
+    visibility: hidden;  
+}
+
+#Show {
+    animation: go-back 1s;
 }

@@ -4,9 +4,9 @@ let AssignInput = window.document.getElementById("assign-Input"); // input da em
 let EmailInput = window.document.getElementById("email-Input"); // input de email
 let SearchBarAssigned = window.document.getElementById("searchBarAssigned"); // input de pesquisa de Empresa
 let SearchBarEmail = window.document.getElementById("searchBarEmail") // input de pesquisa de Email
+
+
 var database = [ localStorage ] // todas as senhas
-
-
 
 // Esta parte do código esta responsável por buscar os valores que o usuário digitou 
 const getPassword = () => {
@@ -30,10 +30,6 @@ const getSerachEmail = () => {
     return ResearchEmail
 }
 
-
-
-
-
 //Esta parte do código é responsável por guardar a senha que o usuário digitou no local storage 
 const putLogin = () => {
 
@@ -49,9 +45,6 @@ const putLogin = () => {
     
 }
 
-
-
-
 //modelo de chave que será usado para guardar a senha do usuário        
 class Key {
     constructor( Password, Email, Assigned ) {
@@ -62,20 +55,27 @@ class Key {
 }
 
 
-
-
-
 //Esta parte do código é usado para mostrar a senha que o usuário pesquisar
 
 function Research(searchedAssign ,searchedEmail) {
+
+    setTimeout(() => {
+        let  ListResult = window.document.getElementById("Hidden")
+        ListResult.setAttribute("id", "Show")
+    }, 1);
 
         if ( searchedAssign.length == 0 || searchedEmail.length == 0) {
             window.alert("Para realizar a pesquisa adicione o email e a empresa que sua senha foi cadastrada")
         } else {
             var KeySearched = JSON.parse(localStorage.getItem(`${searchedAssign} de ${searchedEmail}`));
-            document.querySelector(".KeyName").innerHTML = `${KeySearched.Assigned}:`
-            document.querySelector(".KeyPassword").innerHTML = KeySearched.Password
-            document.querySelector(".KeyEmail").innerHTML = KeySearched.Email
+            document.querySelector(".KeyName").innerHTML = `empresa: ${KeySearched.Assigned}`
+            document.querySelector(".KeyPassword").innerHTML = 'senha: ' + KeySearched.Password
+            document.querySelector(".KeyEmail").innerHTML = 'email: ' +KeySearched.Email
         }
-
+    
+    setTimeout(() => {
+        let  ListResult = window.document.getElementById("Show")
+        ListResult.setAttribute("id", "Hidden")
+    }, 5000);
 }
+
