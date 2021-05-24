@@ -12,16 +12,21 @@
 </head>
 <body class="grid-body grid">
 
-<main class="table">
-    
+<main id="table">
+    <div class="description"> 
+        <hr/> pesquise suas senhas <hr/>
+    </div>
     <div class="search-table grid">
         <input type="text" class="search input-text" placeholder="Empresa" id="searchBarAssigned">
         <input type="email" class="search input-text" placeholder="Email" id="searchBarEmail">
-        <button class="Buttons"id="searchButton" onclick="Research( getSearchAssigned().toUpperCase(), getSerachEmail() )"> <i class="fas fa-search"></i> </button>
+        <button class="Buttons" id="searchButton" onclick="Research( getSearchAssigned().toUpperCase(), getSerachEmail() )"> <i class="fas fa-search"></i> </button>
     </div>
 
     <div class="grid grid-table">
-               
+        <div class="description"> 
+            <hr/> salve sua senha <hr/>
+        </div>
+        
         <input type="password" 
                 id="password"
                 placeholder="Senha"
@@ -39,7 +44,7 @@
                 placeholder="Email" 
                 class="input-text inputEmail">
 
-        <button id="put" class="Buttons Button" onclick="putLogin()"><i class="fas fa-save"></i> Guardar </button>
+        <button id="putButton" class="Buttons Button" onclick="putLogin()"><i class="fas fa-save"></i> Guardar </button>
     </div>
 
     

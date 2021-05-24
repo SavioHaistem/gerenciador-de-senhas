@@ -11,7 +11,7 @@
 .Button {
     grid-area: Button;
 }
-.table {
+#table {
     grid-area: table;
 }
 .Footer {
@@ -19,4 +19,7 @@
 }
 .search-table {
     grid-area: search-table;
+}
+.description {
+    grid-area: description;
 }

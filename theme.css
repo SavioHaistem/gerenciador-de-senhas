@@ -1,4 +1,6 @@
 body, html {
+    display: flexbox;
+    justify-items: center;
     overflow: hidden;
     height: 99%;
     color: rgb(255, 255, 255);
@@ -8,15 +10,36 @@ h3 {
     font-size: 15px;
     font-family: sans-serif;
 }
+.description {
+    margin: none;
+    justify-content: center;
+    justify-self: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 140px 180px 140px;
+}
+
+hr {
+    position: relative;
+    background-color: white;
+    width: 140px;
+    height: 0px;
+}
 .grid {
     display: grid;
 }
 .grid-table {
+    display: flexbox;
     justify-content: center;
-    grid-template-columns: 300px;
-    grid-template-rows:  55px 55px 55px 60px;
+    justify-items: center;
+    grid-template-columns: 500px;
+    grid-template-rows:  50px 55px 55px 55px 60px;
     gap: 0.5rem;
-    grid-template-areas: 
+    grid-template-areas:
+        "description" 
         "inputPassword"
         "inputAssigned"
         "inputEmail"
@@ -33,12 +56,17 @@ h3 {
     ;
 }
 .input-text {
+    width: 300px;
     box-shadow: 2px 1.5px rgb(46, 46, 46);
     border-width: 0;
     border-radius: 10px;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     outline: 0;
+}
+.search {
+    width: 200px;
+    padding: 2px;
 }
 .Buttons {
     font-size: 15px;
@@ -52,10 +80,17 @@ h3 {
     border-radius: 10px;
     cursor: pointer;
 }
+#searchButton {
+    width: 40px;
+}
+#putButton {
+    width: 300px;
+}
 #Key-image {
     width: 400px;
     height: 400px;
 }
+
 .Key-image {
     position: absolute;
     bottom: 1px;
