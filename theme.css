@@ -188,3 +188,7 @@ hr {
  #Hidden {
     visibility: hidden;  
 }
+
+#Show {
+    animation: go-back 1s;
+}
