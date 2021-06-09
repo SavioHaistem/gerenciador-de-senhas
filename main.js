@@ -59,23 +59,30 @@ class Key {
 
 function Research(searchedAssign ,searchedEmail) {
 
-    setTimeout(() => {
-        let  ListResult = window.document.getElementById("Hidden")
-        ListResult.setAttribute("id", "Show")
-    }, 1);
-
-        if ( searchedAssign.length == 0 || searchedEmail.length == 0) {
+        if ( searchedAssign.length == 0 || searchedEmail.length == 0) {  
+            
             window.alert("Para realizar a pesquisa adicione o email e a empresa que sua senha foi cadastrada")
+            
         } else {
+            
             var KeySearched = JSON.parse(localStorage.getItem(`${searchedAssign} de ${searchedEmail}`));
             document.querySelector(".KeyName").innerHTML = `empresa: ${KeySearched.Assigned}`
             document.querySelector(".KeyPassword").innerHTML = 'senha: ' + KeySearched.Password
             document.querySelector(".KeyEmail").innerHTML = 'email: ' +KeySearched.Email
+            
+            setTimeout(() => {
+                let  ListResult = window.document.getElementById("Hidden")
+                ListResult.removeAttribute("id","Hidden")
+                ListResult.setAttribute("id","Anim")
+            }, 1);
+            setTimeout(() => {
+                let ListResultEndAnimation = window.document.getElementById("Anim")
+                ListResultEndAnimation.setAttribute("id","ShowTwo")
+            }, 1000);
+            setTimeout(() => {
+                let  ListResultClose = window.document.getElementById("ShowTwo")
+                ListResultClose.setAttribute("id","Hidden")
+            }, 8000);
         }
-    
-    setTimeout(() => {
-        let  ListResult = window.document.getElementById("Show")
-        ListResult.setAttribute("id", "Hidden")
-    }, 5000);
 }
 
