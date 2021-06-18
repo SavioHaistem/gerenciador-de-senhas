@@ -10,7 +10,8 @@ Observações: as senhas ficam salvas no seu navegador, por tanto as senhas pode
 <h3> Buscar </h3>
 <p> Para pesquisar suas senhas insira na área "buscar suas senhas" no primeiro campo ( empresa ) insira a empresa de qual senha você quer buscar e no segundo campo insira 
 o email usado para salvar a senha e em seguida clique na lupa e se a senha estiver salva uma caixa irá aparecer com a senha. </p>
-<img align="center" src="images/readme/Captura de tela 2021-06-18 090204.jpg">
+<div align="center"> <img src="images/Readme/Captura de tela 2021-06-18 090041.jpg" whidth="300" height="200"> </div>
 <h3> Salvar </h3>
 <p> para salvar a senha vá a área "salve sua senha" e preencha o formulário com os dados. após preencher clique no botão "guardar". Se tiver algo de errado a mensagem de erro aparecerá </p> 
+<div align="center"> <img src="images/Readme/Captura de tela 2021-06-18 090204.jpg" whidth="400" height="400"> </div>
 </h4>
