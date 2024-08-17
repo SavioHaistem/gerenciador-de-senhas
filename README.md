@@ -1,17 +1,23 @@
-<h1 align="center"> gerenciador-de-senhas <h1>
+# Gerenciador de senhas
+### Salve suas senhas e busque-as quando precisar, apenas pelo nome do serviço e email.
+> as senhas ficam salvas no **local storage** do navegador, por tanto as senhas podem ser perdidas caso você o formate, ou limpe os dados de seu navegador.
+<br />
 
-<h4> <p> Este é um gerenciador de senhas simples, use-o para salvar suas senhas e pesquisalas com segurança, pois as senhas estão salvas no seu próprio computador. </p>
 
-Observações: as senhas ficam salvas no seu navegador, por tanto as senhas podem ser perdidas caso você o formate. </h4>
+A ideia deste projeto veio apartir da minha necessidade de guardar senhas, na época eu ainda estava estudando apenas javascript css e html então fiz um projeto
+bem simples que apenas escondesse a senha no navegador.
 
-<h4>
-<h2 align="center"> Pesquise e salve suas senhas </h2>
+## Pesquise e salve suas senhas
 
-<h3> Buscar </h3>
-<p> Para pesquisar suas senhas insira na área "buscar suas senhas" no primeiro campo ( empresa ) insira a empresa de qual senha você quer buscar e no segundo campo insira 
-o email usado para salvar a senha e em seguida clique na lupa e se a senha estiver salva uma caixa irá aparecer com a senha. </p>
-<div align="center"> <img src="images/Readme/Captura de tela 2021-06-18 090041.jpg" whidth="300" height="200"> </div>
-<h3> Salvar </h3>
-<p> para salvar a senha vá a área "salve sua senha" e preencha o formulário com os dados. após preencher clique no botão "guardar". Se tiver algo de errado a mensagem de erro aparecerá </p> 
+https://github.com/user-attachments/assets/f01210e3-b2e6-48cb-9eef-5509dd085bfa
+
+### Salvar
+para salvar a senha vá a área "salve sua senha" e preencha o formulário com os dados. após preencher clique no botão "guardar". Se tiver algo de errado a mensagem de erro aparecerá
+<br />
 <div align="center"> <img src="images/Readme/Captura de tela 2021-06-18 090204.jpg" whidth="400" height="400"> </div>
-</h4>
+
+### Buscar
+Para pesquisar suas senhas insira na área "buscar suas senhas" no primeiro campo ( empresa ) insira a empresa de qual senha você quer buscar e no segundo campo insira 
+o email usado para salvar a senha e em seguida clique na lupa e se a senha estiver salva uma caixa irá aparecer com a senha.
+<br />
+<div align="center"> <img src="images/Readme/Captura de tela 2021-06-18 090041.jpg" whidth="300" height="200"> </div>
